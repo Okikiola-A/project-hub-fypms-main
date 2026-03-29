@@ -6,7 +6,7 @@ Usage:
     OR
     python scripts/seeders/seed_departments.py
 
-Departments seeded: 15 common university departments
+Departments seeded: 5 BUCC departments
 """
 
 import sys
@@ -20,81 +20,31 @@ from api.v1.models.department import Department
 
 
 DEPARTMENTS = [
-    {
-        "name": "Computer Science",
-        "code": "CSC",
-        "description": "Study of computation, algorithms, data structures, and software engineering.",
-    },
-    {
-        "name": "Electrical & Electronics Engineering",
-        "code": "EEE",
-        "description": "Design and application of electrical systems, circuits, and electronic devices.",
-    },
-    {
-        "name": "Mechanical Engineering",
-        "code": "MEE",
-        "description": "Design, analysis, and manufacturing of mechanical systems.",
-    },
-    {
-        "name": "Civil Engineering",
-        "code": "CVE",
-        "description": "Planning, design, and construction of infrastructure and buildings.",
-    },
-    {
-        "name": "Information Technology",
-        "code": "IFT",
-        "description": "Application of computing technologies to manage and process information.",
-    },
-    {
-        "name": "Software Engineering",
-        "code": "SEN",
-        "description": "Systematic approach to the design, development, and maintenance of software.",
-    },
-    {
-        "name": "Cyber Security",
-        "code": "CYB",
-        "description": "Protection of computer systems, networks, and data from digital threats.",
-    },
-    {
-        "name": "Mathematics",
-        "code": "MTH",
-        "description": "Study of numbers, structures, patterns, and quantitative reasoning.",
-    },
-    {
-        "name": "Physics",
-        "code": "PHY",
-        "description": "Study of matter, energy, and the fundamental forces of nature.",
-    },
-    {
-        "name": "Chemistry",
-        "code": "CHM",
-        "description": "Study of substances, their properties, reactions, and transformations.",
-    },
-    {
-        "name": "Biochemistry",
-        "code": "BCH",
-        "description": "Study of chemical processes and substances within living organisms.",
-    },
-    {
-        "name": "Business Administration",
-        "code": "BUS",
-        "description": "Management principles, organisational behaviour, and business strategy.",
-    },
-    {
-        "name": "Economics",
-        "code": "ECO",
-        "description": "Study of production, distribution, and consumption of goods and services.",
-    },
-    {
-        "name": "Mass Communication",
-        "code": "MAC",
-        "description": "Study of media, journalism, public relations, and communication theory.",
-    },
-    {
-        "name": "Architecture",
-        "code": "ARC",
-        "description": "Design and planning of buildings and physical structures.",
-    },
+  {
+    "name": "Computer Information Systems",
+    "code": "CIS",
+    "description": "Study of how computing systems are applied in business environments to manage, process, and support organizational information."
+  },
+  {
+    "name": "Computer Information Technology",
+    "code": "CIT",
+    "description": "Focus on practical implementation, deployment, and maintenance of computing infrastructure, networks, and systems."
+  },
+  {
+    "name": "Computer Science",
+    "code": "CS",
+    "description": "Study of computation, algorithms, data structures, and software engineering."
+  },
+  {
+    "name": "Information Technology",
+    "code": "IT",
+    "description": "Application of computing technologies to manage and process information."
+  },
+  {
+    "name": "Software Engineering",
+    "code": "SE",
+    "description": "Systematic approach to the design, development, and maintenance of software."
+  }
 ]
 
 

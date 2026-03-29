@@ -27,20 +27,20 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 # ──────────────────────────────────────────────
 #  Shared password for every seeded user
 # ──────────────────────────────────────────────
-SEED_PASSWORD = "Password123"
+SEED_PASSWORD = "password123"
 
 USERS = [
     # ── Admins ────────────────────────────────
     {
-        "first_name": "Adebayo",
-        "last_name": "Ogunleye",
+        "first_name": "Leo",
+        "last_name": "Ron",
         "email": "admin@projecthub.com",
         "role": UserRole.ADMIN.value,
         "is_active": True,
     },
     {
-        "first_name": "Funke",
-        "last_name": "Adeyemi",
+        "first_name": "Frank",
+        "last_name": "Richkard",
         "email": "admin2@projecthub.com",
         "role": UserRole.ADMIN.value,
         "is_active": True,
@@ -48,102 +48,102 @@ USERS = [
 
     # ── Supervisors ───────────────────────────
     {
-        "first_name": "Dr. Chinedu",
-        "last_name": "Okafor",
-        "email": "supervisor1@projecthub.com",
+        "first_name": "Dr. Ajayi",
+        "last_name": "Oluwabukola",
+        "email": "ajayioluwabukola@projecthub.com",
         "role": UserRole.SUPERVISOR.value,
         "is_active": True,
     },
     {
         "first_name": "Prof. Ngozi",
-        "last_name": "Eze",
-        "email": "supervisor2@projecthub.com",
+        "last_name": "Chisom",
+        "email": "ngozichisom@projecthub.com",
         "role": UserRole.SUPERVISOR.value,
         "is_active": True,
     },
     {
-        "first_name": "Dr. Tunde",
-        "last_name": "Bakare",
-        "email": "supervisor3@projecthub.com",
+        "first_name": "Dr. Seun",
+        "last_name": "Ebiesuwa",
+        "email": "seunebiesuwa@projecthub.com",
         "role": UserRole.SUPERVISOR.value,
         "is_active": True,
     },
     {
-        "first_name": "Dr. Amina",
-        "last_name": "Ibrahim",
-        "email": "supervisor4@projecthub.com",
+        "first_name": "Dr. Alao",
+        "last_name": "Olujimi",
+        "email": "alaoolujimi@projecthub.com",
         "role": UserRole.SUPERVISOR.value,
         "is_active": True,
     },
     {
-        "first_name": "Prof. Segun",
-        "last_name": "Adeniyi",
-        "email": "supervisor5@projecthub.com",
+        "first_name": "Dr. Onuiri",
+        "last_name": "Ernest",
+        "email": "onuiriernest@projecthub.com",
         "role": UserRole.SUPERVISOR.value,
         "is_active": True,
     },
 
     # ── Students ──────────────────────────────
     {
-        "first_name": "Korede",
-        "last_name": "Fashina",
-        "email": "student1@projecthub.com",
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "johndoe@projecthub.com",
         "role": UserRole.STUDENT.value,
         "is_active": True,
     },
     {
-        "first_name": "Chiamaka",
-        "last_name": "Nwosu",
-        "email": "student2@projecthub.com",
+        "first_name": "Samuel",
+        "last_name": "Akindoju",
+        "email": "samuelakindoju@projecthub.com",
         "role": UserRole.STUDENT.value,
         "is_active": True,
     },
     {
-        "first_name": "Yusuf",
-        "last_name": "Abdullahi",
-        "email": "student3@projecthub.com",
+        "first_name": "Chidera",
+        "last_name": "Eliogu",
+        "email": "chideraeliogu@projecthub.com",
         "role": UserRole.STUDENT.value,
         "is_active": True,
     },
     {
-        "first_name": "Temitope",
-        "last_name": "Akinwale",
-        "email": "student4@projecthub.com",
+        "first_name": "Solomon",
+        "last_name": "Chukwuemeka",
+        "email": "solomonchukwuemeka@projecthub.com",
+        "role": UserRole.STUDENT.value,
+        "is_active": True,
+    },
+    {
+        "first_name": "Temi",
+        "last_name": "Akin",
+        "email": "temiakin4@projecthub.com",
         "role": UserRole.STUDENT.value,
         "is_active": True,
     },
     {
         "first_name": "Emeka",
-        "last_name": "Ugochukwu",
-        "email": "student5@projecthub.com",
+        "last_name": "Ugo",
+        "email": "emekaugo@projecthub.com",
         "role": UserRole.STUDENT.value,
         "is_active": True,
     },
     {
-        "first_name": "Halima",
-        "last_name": "Bello",
-        "email": "student6@projecthub.com",
+        "first_name": "Alimi",
+        "last_name": "Bells",
+        "email": "alimibells@projecthub.com",
         "role": UserRole.STUDENT.value,
         "is_active": True,
     },
     {
-        "first_name": "Chisom",
-        "last_name": "Okonkwo",
-        "email": "student7@projecthub.com",
+        "first_name": "Dave",
+        "last_name": "Okon",
+        "email": "daveokon@projecthub.com",
         "role": UserRole.STUDENT.value,
         "is_active": True,
     },
     {
-        "first_name": "Aisha",
-        "last_name": "Mohammed",
-        "email": "student8@projecthub.com",
-        "role": UserRole.STUDENT.value,
-        "is_active": True,
-    },
-    {
-        "first_name": "David",
-        "last_name": "Oladele",
-        "email": "student9@projecthub.com",
+        "first_name": "Alisha",
+        "last_name": "Moma",
+        "email": "alishamoma@projecthub.com",
         "role": UserRole.STUDENT.value,
         "is_active": True,
     },
@@ -197,6 +197,6 @@ if __name__ == "__main__":
     print(f"  {'Role':<12} {'Email':<32} Password")
     print("-" * 50)
     print(f"  {'Admin':<12} {'admin@projecthub.com':<32} {SEED_PASSWORD}")
-    print(f"  {'Supervisor':<12} {'supervisor1@projecthub.com':<32} {SEED_PASSWORD}")
-    print(f"  {'Student':<12} {'student1@projecthub.com':<32} {SEED_PASSWORD}")
+    print(f"  {'Supervisor':<12} {'ajayioluwabukola@projecthub.com':<32} {SEED_PASSWORD}")
+    print(f"  {'Student':<12} {'johndoe@projecthub.com':<32} {SEED_PASSWORD}")
     print("-" * 50)
